@@ -167,6 +167,13 @@ video {
     .channel-info p, .live-programming p {
         font-size: 14px;
     }
+
+    .info-container {
+        width: 100%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -201,6 +208,13 @@ video {
     .channel-info p, .live-programming p {
         font-size: 14px;
     }
+
+    .info-container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -223,6 +237,13 @@ video {
 
     .channel-info p, .live-programming p {
         font-size: 12px;
+    }
+
+    .info-container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
