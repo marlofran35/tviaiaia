@@ -19,7 +19,7 @@ body {
 /* Cabeçalho */
 .header {
     background-color: #FF4F00;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: center;
 }
 
@@ -34,13 +34,13 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: -110px;
     padding: 0;
     flex-wrap: wrap;
 }
 
 .navbar .menu li {
-    margin: 10px 20px;
+    margin: 120px 20px;
 }
 
 .navbar .menu li a {
@@ -53,6 +53,10 @@ body {
     text-decoration: underline;
 }
 
+.site-logo img {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+}
 /* Player */
 .player-container {
     position: relative;
@@ -96,33 +100,20 @@ video {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin-top: 20px;
 }
-
-.channel-info {
-    flex: 1;
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 67%;
-	margin-left: 10px;
-	margin-top: -15px;
-}
-
 
 .channel-info, .live-programming {
     width: 100%;
     background: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 20px;
-	margin-top: -15px;
+    margin-bottom: 5px;
+	margin-left: 50%;
+	margin-top: -0px;
 }
 
 .channel-info h2, .live-programming h3 {
@@ -158,7 +149,17 @@ video {
         font-size: 20px;
     }
 
-  
+    .channel-info, .live-programming {
+        padding: 10px;
+    }
+
+    .channel-info h2, .live-programming h3 {
+        font-size: 20px;
+    }
+
+    .channel-info p, .live-programming p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -171,5 +172,15 @@ video {
         font-size: 18px;
     }
 
+    .channel-info, .live-programming {
+        padding: 5px;
+    }
 
+    .channel-info h2, .live-programming h3 {
+        font-size: 18px;
+    }
+
+    .channel-info p, .live-programming p {
+        font-size: 12px;
+    }
 }
