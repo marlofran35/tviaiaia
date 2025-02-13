@@ -274,7 +274,7 @@ video {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -282,7 +282,7 @@ video {
 }
 
 .footer .social-icons {
-    margin-bottom: 5px;
+    margin-bottom: -5px;
 }
 
 .footer .social-icons a {
