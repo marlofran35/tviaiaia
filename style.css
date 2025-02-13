@@ -137,12 +137,17 @@ video {
         padding: 10px;
     }
 
+    .navbar .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .navbar .menu li {
-        margin: 5px 10px;
+        margin: 5px 0;
     }
 
     .player-container, .channel-info, .live-programming {
-        width: 90%;
+        width: 100%;
         padding: 15px;
     }
 
@@ -170,7 +175,7 @@ video {
 
     .info-container {
         width: 100%;
-        max-width: 90%;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -180,6 +185,10 @@ video {
     .navbar .menu {
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbar .menu li {
+        margin: 5px 0;
     }
 
     .player-container, .channel-info, .live-programming {
@@ -218,6 +227,15 @@ video {
 }
 
 @media (max-width: 480px) {
+    .navbar .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu li {
+        margin: 5px 0;
+    }
+
     .channel-logo {
         width: 30px;
         height: 30px;
