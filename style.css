@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    padding-bottom: 60px; /* Ajuste conforme necessário */
 }
 
 /* Contêiner principal */
@@ -130,10 +131,18 @@ video {
 }
 
 /* Estilos responsivos */
-@media (max-width: 768px) {
-    .navbar .menu {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 1024px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar .menu li {
+        margin: 5px 10px;
+    }
+
+    .player-container, .channel-info, .live-programming {
+        width: 90%;
+        padding: 15px;
     }
 
     .channel-header {
@@ -150,8 +159,38 @@ video {
         font-size: 20px;
     }
 
-    .channel-info, .live-programming {
+    .channel-info h2, .live-programming h3 {
+        font-size: 20px;
+    }
+
+    .channel-info p, .live-programming p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-container, .channel-info, .live-programming {
+        width: 100%;
         padding: 10px;
+    }
+
+    .channel-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .channel-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .channel-name {
+        font-size: 20px;
     }
 
     .channel-info h2, .live-programming h3 {
@@ -195,6 +234,7 @@ video {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .footer .social-icons {
