@@ -56,8 +56,9 @@ body {
 }
 
 .site-logo img {
-    width: 50px; /* Ajuste o tamanho conforme necessário */
-    height: 50px; /* Ajuste o tamanho conforme necessário */
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 20px; /* Ajuste o tamanho conforme necessário */
+    margin-top: 10px;
 }
 
 /* Player */
