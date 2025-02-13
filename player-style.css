@@ -57,14 +57,14 @@ body {
     padding: 20px;
 }
 
-.player-container {
-    position: relative;
+.player-container, .channel-info, .map-container, .live-programming {
     width: 80%;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 video {
@@ -91,28 +91,8 @@ video {
     color: #333;
 }
 
-.channel-info {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-top: 20px;
-    width: 100%;
-}
-
 .map-container {
     margin-top: 20px;
-}
-
-.live-programming {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
 }
 
 .channel-info h3, .live-programming h2 {
@@ -134,4 +114,78 @@ video {
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-container, .channel-info, .map-container, .live-programming {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .channel-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .channel-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .channel-name {
+        font-size: 20px;
+    }
+
+    .channel-info h3, .live-programming h2 {
+        font-size: 20px;
+    }
+
+    .channel-info p, .live-programming p {
+        font-size: 14px;
+    }
+
+    .news-iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .channel-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .channel-name {
+        font-size: 18px;
+    }
+
+    .channel-info, .live-programming {
+        padding: 5px;
+    }
+
+    .player-container, .channel-info, .map-container, .live-programming {
+        padding: 5px;
+    }
+
+    .channel-info h3, .live-programming h2 {
+        font-size: 18px;
+    }
+
+    .channel-info p, .live-programming p {
+        font-size: 12px;
+    }
+
+    .news-iframe {
+        height: 200px;
+    }
 }

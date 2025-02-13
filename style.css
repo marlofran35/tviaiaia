@@ -28,19 +28,20 @@ body {
     display: flex;
     justify-content: center;
     background-color: #FF4F00;
+    width: 100%;
 }
 
 .navbar .menu {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: -110px;
+    margin: 0;
     padding: 0;
     flex-wrap: wrap;
 }
 
 .navbar .menu li {
-    margin: 120px 20px;
+    margin: 10px 20px;
 }
 
 .navbar .menu li a {
@@ -57,6 +58,7 @@ body {
     width: 50px; /* Ajuste o tamanho conforme necessário */
     height: 50px; /* Ajuste o tamanho conforme necessário */
 }
+
 /* Player */
 .player-container {
     position: relative;
@@ -102,6 +104,7 @@ video {
     width: 100%;
     max-width: 800px;
     margin-top: 20px;
+	margin-left: 200px;
 }
 
 .channel-info, .live-programming {
@@ -111,9 +114,7 @@ video {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 5px;
-	margin-left: 50%;
-	margin-top: -0px;
+    margin-bottom: 20px;
 }
 
 .channel-info h2, .live-programming h3 {
@@ -183,4 +184,35 @@ video {
     .channel-info p, .live-programming p {
         font-size: 12px;
     }
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .social-icons {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+    color: #ff6347;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
 }
