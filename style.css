@@ -1,0 +1,175 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contêiner principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #FF4F00;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navegação */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #FF4F00;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navbar .menu li {
+    margin: 10px 20px;
+}
+
+.navbar .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Player */
+.player-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Canal */
+.channel-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.channel-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.channel-name {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+/* Informações */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.channel-info {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 67%;
+	margin-left: 10px;
+	margin-top: -15px;
+}
+
+
+.channel-info, .live-programming {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+	margin-top: -15px;
+}
+
+.channel-info h2, .live-programming h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.channel-info p, .live-programming p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .channel-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .channel-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .channel-name {
+        font-size: 20px;
+    }
+
+  
+}
+
+@media (max-width: 480px) {
+    .channel-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .channel-name {
+        font-size: 18px;
+    }
+
+
+}
